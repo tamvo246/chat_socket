@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Demo Socket</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+    <body>
+        <div id="form-login">
+            <form action="" enctype="multipart/form-data" id="form">
+                <div class="form-group">
+                  <!-- <input type="file" class="form-control-file" name="avatar"> -->
+                  <input type="text" id="user-name" name="user-name">
+                  <input type="button" id="submit" value='Send'>           
+                </div>
+            </form> 
+        </div>
+        <div id="form-chat">
+            <div id="tag-user">
+                <div id='title'> User Online</div>
+                <div id='show-user'>
+                    <!-- <div class="user"> AAAA</div>
+                    <div class="user"> AAAA</div>
+                    <div class="user"> AAAA</div>
+                    <div class="user"> AAAA</div> -->
+                </div>
+                
+            </div>
+            <div id="tag-chat">
+                <div id="header">
+                    <!-- <img > -->
+                    <h2 id='title-user'>Hello user </h2>
+                    <input id="log-out" type=button value="Log out">
+                </div>
+                <div id="content">
+                    <!-- <div class="show-message">
+                        .
+                    </div>
+                    <div class="show-message">
+                        left
+                    </div>
+                    <div class="show-message-right">
+                        <div id="message-right">alllo</div>
+                    </div> -->
+                    <!-- <div class="show-message">
+                       <div style="height:30px ;width:30px;background-color: black;"></div>
+                    </div>    -->
+                </div>
+                <div id="send-data">
+                    <div id='chatting'>someone is chatting ...</div>
+                    <input type="text" id="message">
+                    <input id="send" type=button value="Send">
+                </div>
+
+            </div>
+        </div>
+        
+    </body>
+    <script src="chat.js" type="text/javascript"> </script>
+    
+</html>
